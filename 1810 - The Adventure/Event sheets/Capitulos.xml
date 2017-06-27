@@ -1,0 +1,661 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Capitulos</name>
+    <events>
+        <variable constant="0" name="nivelActual" sid="241367456526119" static="0" type="number">11</variable>
+        <variable constant="0" name="framePaginaActual" sid="416411456248818" static="0" type="number">0</variable>
+        <variable constant="0" name="capituloActual" sid="1031546871313147" static="0" type="number">11</variable>
+        <variable constant="0" name="lineaCapitulo" sid="5252187546123002" static="0" type="number">1</variable>
+        <variable constant="0" name="personajeActual" sid="9827349691219599" static="0" type="text"></variable>
+        <variable constant="0" name="velocidadTexto" sid="7374504380464236" static="0" type="number">1</variable>
+        <event-group description="" sid="791094343440449" title="Seleccion de capitulos">
+            <sub-events>
+                <event-block sid="139288704422614">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="552126920906703" type="System">
+                            <param id="0" name="Variable">capituloActual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="455142267203384" type="backgroundCapitulos">
+                            <param id="0" name="Animation">&quot;CapituloFinal&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="445701507731827" title="seleccion capitulos - mundo 1">
+                    <sub-events>
+                        <event-block sid="392900740671217">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="739409120980239" type="System">
+                                    <param id="0" name="Variable">capituloActual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">11</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="969778740070152" type="backgroundCapitulos">
+                                    <param id="0" name="Animation">&quot;Capitulo11&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="134410740757890">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="169621058623589" type="System">
+                                    <param id="0" name="Variable">capituloActual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">12</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="653376645990816" type="backgroundCapitulos">
+                                    <param id="0" name="Animation">&quot;Capitulo12&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="795482146270811">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="633341891388238" type="System">
+                                    <param id="0" name="Variable">capituloActual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">13</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="590192488916850" type="backgroundCapitulos">
+                                    <param id="0" name="Animation">&quot;Capitulo13&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="299631248116388">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="321268722694976" type="System">
+                                    <param id="0" name="Variable">capituloActual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">14</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="660590822939212" type="backgroundCapitulos">
+                                    <param id="0" name="Animation">&quot;Capitulo14&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="417946790125328">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="792340706729619" type="System">
+                                    <param id="0" name="Variable">capituloActual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">15</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="235134370035895" type="backgroundCapitulos">
+                                    <param id="0" name="Animation">&quot;Capitulo15&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="211987397452849">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="510421733482452" type="System">
+                                    <param id="0" name="Variable">capituloActual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">16</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="944568830674961" type="backgroundCapitulos">
+                                    <param id="0" name="Animation">&quot;Capitulo16&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="393716718623640">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="146789348002371" type="System">
+                                    <param id="0" name="Variable">capituloActual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">17</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="743669201237360" type="backgroundCapitulos">
+                                    <param id="0" name="Animation">&quot;Capitulo17&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="525490747682472" title="seleccion capitulos - mundo 2">
+                    <sub-events>
+                        <event-block sid="965971599631699">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="912740962165147" type="System">
+                                    <param id="0" name="Variable">capituloActual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">21</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="836847091105037" type="backgroundCapitulos">
+                                    <param id="0" name="Animation">&quot;Capitulo21&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="963767937830977">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="798868908262081" type="System">
+                                    <param id="0" name="Variable">capituloActual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">22</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="784523190651806" type="backgroundCapitulos">
+                                    <param id="0" name="Animation">&quot;Capitulo22&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="606269295489134">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="859188046542533" type="System">
+                                    <param id="0" name="Variable">capituloActual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">23</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="222367515938177" type="backgroundCapitulos">
+                                    <param id="0" name="Animation">&quot;Capitulo23&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="757662005762085">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="744210639778711" type="System">
+                                    <param id="0" name="Variable">capituloActual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">24</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="652070382372688" type="backgroundCapitulos">
+                                    <param id="0" name="Animation">&quot;Capitulo24&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="461709401581052">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="264210601453520" type="System">
+                                    <param id="0" name="Variable">capituloActual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">25</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="280930291132510" type="backgroundCapitulos">
+                                    <param id="0" name="Animation">&quot;Capitulo25&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="443177124698901">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="115764711406208" type="System">
+                                    <param id="0" name="Variable">capituloActual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">26</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="170332398294274" type="backgroundCapitulos">
+                                    <param id="0" name="Animation">&quot;Capitulo26&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="442123697231020" title="seleccion capitulos - mundo 3">
+                    <sub-events>
+                        <event-block sid="200120208479160">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="380001511261039" type="System">
+                                    <param id="0" name="Variable">capituloActual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">31</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="962555819150432" type="backgroundCapitulos">
+                                    <param id="0" name="Animation">&quot;Capitulo31&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="583881071329767">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="629824584937373" type="System">
+                                    <param id="0" name="Variable">capituloActual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">32</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="213948070555115" type="backgroundCapitulos">
+                                    <param id="0" name="Animation">&quot;Capitulo32&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="942125023229559">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="788261430697676" type="System">
+                                    <param id="0" name="Variable">capituloActual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">33</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="153853056857728" type="backgroundCapitulos">
+                                    <param id="0" name="Animation">&quot;Capitulo33&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="965059310592657" title="Avanzar imagen">
+            <sub-events>
+                <event-block sid="672896298912975">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="103543643282394" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="536683394103789" type="backgroundCapitulos">
+                            <param id="0" name="Y">backgroundCapitulos.Y - 1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="642251615727653" type="backgroundCapitulos">
+                            <param id="0" name="Instance variable">largoImagen</param>
+                            <param id="1" name="Value">backgroundCapitulos.Height</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="468185251597608" type="backgroundCapitulos">
+                            <param id="0" name="Instance variable">ctdPaginasCapitulo</param>
+                            <param id="1" name="Value">backgroundCapitulos.AnimationFrameCount</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="913148927175921">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="767391504991821" type="backgroundCapitulos">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="Y co-ordinate">-(backgroundCapitulos.largoImagen - 480)</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="784941925310126" type="System">
+                            <param id="0" name="Variable">framePaginaActual</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">backgroundCapitulos.ctdPaginasCapitulo - 1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="652515239399549" type="System">
+                            <param id="0" name="Group name">&quot;Avanzar imagen&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="864044633645765" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-group description="" sid="479563869145644" title="redireccion a niveles">
+                            <sub-events>
+                                <event-block sid="353346172542455">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="228513921089043" type="System">
+                                            <param id="0" name="Variable">nivelActual</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="194728863925461" type="System">
+                                            <param id="0" name="Layout">Menu</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-group description="" sid="707829641486621" title="redireccion a niveles - mundo 1">
+                                    <sub-events>
+                                        <event-block sid="700114427284350">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="656267699132959" type="System">
+                                                    <param id="0" name="Variable">nivelActual</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">11</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-2" name="Go to layout" sid="848722114018841" type="System">
+                                                    <param id="0" name="Layout">Mundo 01 - Nivel 01 (Busqueda decreto libertad de comercio)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="145548618229450">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="842637614451511" type="System">
+                                                    <param id="0" name="Variable">nivelActual</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">12</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-2" name="Go to layout" sid="745596578827951" type="System">
+                                                    <param id="0" name="Layout">Mundo 01 - Nivel 02 (Busqueda Decreto formacion de cuerpos armados)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="988095861228524">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="729780332144860" type="System">
+                                                    <param id="0" name="Variable">nivelActual</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">13</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-2" name="Go to layout" sid="801275374232031" type="System">
+                                                    <param id="0" name="Layout">Mundo 01 - Nivel 03(Busqueda decreto convocatoria del primer congreso nacional)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="666479224147302">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="270816861026593" type="System">
+                                                    <param id="0" name="Variable">nivelActual</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">14</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-2" name="Go to layout" sid="353414676481418" type="System">
+                                                    <param id="0" name="Layout">Mundo 01 - Nivel 04 (Motin de Figueroa 1 abril 1811)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="615753624825978">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="836385580359256" type="System">
+                                                    <param id="0" name="Variable">nivelActual</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">15</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-2" name="Go to layout" sid="672633820165500" type="System">
+                                                    <param id="0" name="Layout">Mundo 01 - Nivel 05 (Golpe de estado Carrera 4 sep 1811)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="342646853156412">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="272459859465444" type="System">
+                                                    <param id="0" name="Variable">nivelActual</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">16</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-2" name="Go to layout" sid="732762913975870" type="System">
+                                                    <param id="0" name="Layout">Mundo 01 - Nivel 06 ( 2 Golpe de estado Carrera 15 nov 1811)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="461764513443555">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="780226165190549" type="System">
+                                                    <param id="0" name="Variable">nivelActual</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">17</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-2" name="Go to layout" sid="192693144551305" type="System">
+                                                    <param id="0" name="Layout">Mundo 01 - Nivel 07 (  Gobierno Carrera 1811-1812)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-group>
+                                <event-group description="" sid="232327201852000" title="redireccion a niveles - mundo 2">
+                                    <sub-events>
+                                        <event-block sid="668630500161646">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="163928530484661" type="System">
+                                                    <param id="0" name="Variable">nivelActual</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">21</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-2" name="Go to layout" sid="663145990507434" type="System">
+                                                    <param id="0" name="Layout">Mundo 02 - Nivel 01 ( Batalla de rancagua 1 OCT 1814)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="946705713749542">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="570544762724304" type="System">
+                                                    <param id="0" name="Variable">nivelActual</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">22</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-2" name="Go to layout" sid="506931320643811" type="System">
+                                                    <param id="0" name="Layout">Mundo 02 - Nivel 02 (Destierro de patriotas chilenos 7,8,9 OCT 1814)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="978767476397784">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="876162362065112" type="System">
+                                                    <param id="0" name="Variable">nivelActual</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">23</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-2" name="Go to layout" sid="221982972102119" type="System">
+                                                    <param id="0" name="Layout">Mundo 02 - Nivel 03 (Llegada manuel rodriguez 3 ENERO 1816)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="700072863926687">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="633090094531391" type="System">
+                                                    <param id="0" name="Variable">nivelActual</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">24</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-2" name="Go to layout" sid="449183338554179" type="System">
+                                                    <param id="0" name="Layout">Mundo 02 - Nivel 04 (Santiago-Llegada manuel rodriguez 3 ENERO 1816)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="604545049189175">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="629347571400688" type="System">
+                                                    <param id="0" name="Variable">nivelActual</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">25</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-2" name="Go to layout" sid="982204755173349" type="System">
+                                                    <param id="0" name="Layout">Mundo 02 - Nivel 05 (Informacion Falsa en Chacabuco 10 febrero 1817)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="360147466231406">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="459051469997763" type="System">
+                                                    <param id="0" name="Variable">nivelActual</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">26</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-2" name="Go to layout" sid="610676393442706" type="System">
+                                                    <param id="0" name="Layout">Mundo 02 - Nivel 06 (Batalla de Chacabuco 12 febrero 1817)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-group>
+                                <event-group description="" sid="315577277261596" title="redireccion a niveles - mundo 3">
+                                    <sub-events>
+                                        <event-block sid="423240427699067">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="655360677047162" type="System">
+                                                    <param id="0" name="Variable">nivelActual</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">31</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-2" name="Go to layout" sid="577128096751905" type="System">
+                                                    <param id="0" name="Layout">Mundo 03 - Nivel 01 (Rescate a Patriotas Isla Juan Fernandez)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="401417310819780">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="789634111273968" type="System">
+                                                    <param id="0" name="Variable">nivelActual</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">32</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-2" name="Go to layout" sid="229654623529682" type="System">
+                                                    <param id="0" name="Layout">Mundo 03 - Nivel 02 (Batalla cancha Rayada 18 Marzo 1818)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="253494655160997">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="832150774863676" type="System">
+                                                    <param id="0" name="Variable">nivelActual</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">33</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-2" name="Go to layout" sid="206230887519111" type="System">
+                                                    <param id="0" name="Layout">Mundo 03 - Nivel 03 (Batalla de Maipu 5 abril 1818)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-group>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="207363277342320">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="127455381207763" type="backgroundCapitulos">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Y co-ordinate">-(backgroundCapitulos.largoImagen - 480)</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="370138928959356" type="System">
+                    <param id="0" name="Variable">framePaginaActual</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">backgroundCapitulos.ctdPaginasCapitulo - 1</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="616357614865624" type="System" />
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="662467882984962" type="System">
+                    <param id="0" name="Group name">&quot;Avanzar imagen&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="959418320241330" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-2" name="Set Y" sid="180896955787356" type="backgroundCapitulos">
+                    <param id="0" name="Y">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="831126301644639" type="backgroundCapitulos">
+                    <param id="0" name="Frame number">framePaginaActual + 1</param>
+                </action>
+                <action id="-10" name="Add to" sid="946468177233305" type="System">
+                    <param id="0" name="Variable">framePaginaActual</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="231941970824563" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-12" name="Set group active" sid="152239562087577" type="System">
+                    <param id="0" name="Group name">&quot;Avanzar imagen&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="205019737330718">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="458375250874094" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="385519222727371" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-12" name="Set group active" sid="182283034283749" type="System">
+                    <param id="0" name="Group name">&quot;Avanzar imagen&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="185278475346959">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="713335503967532" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="952720746534007" type="Audio">
+                    <param id="0" name="Audio file">Caps</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;MusicaCapitulos&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="605822899337365">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="630034631174354" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="766856595863313" type="Audio">
+                    <param id="0" name="Tag">&quot;MusicaCapitulos&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

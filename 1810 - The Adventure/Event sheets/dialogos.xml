@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>dialogos</name>
+    <events>
+        <variable constant="0" name="mostrandoTexto" sid="930352719782941" static="0" type="number">0</variable>
+        <event-block sid="106745102991001">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="132461865486858" type="System">
+                    <param id="0" name="Variable">mostrandoTexto</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="629343976713049" type="player">
+                    <param id="0" name="Input">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="156988742504501" type="dialogosNPC">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="911769065003164">
+            <conditions>
+                <condition id="-22" name="Else" sid="293222469029444" type="System" />
+                <condition id="-14" name="Compare variable" sid="795736083495572" type="System">
+                    <param id="0" name="Variable">mostrandoTexto</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="752132137991665" type="player">
+                    <param id="0" name="Input">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="114927021294907" type="dialogosNPC">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

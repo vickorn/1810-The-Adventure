@@ -1,0 +1,578 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Mundo 03 - Nivel 01</name>
+    <events>
+        <include>popUpMenu</include>
+        <include>Player</include>
+        <include>ObjetosGlobales</include>
+        <include>dialogos</include>
+        <event-block sid="121195988196260">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="725997142089865" type="System">
+                    <param id="0" name="Variable">nivelTerminado</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="935901780646256" type="player">
+                    <param id="0" name="Instance variable">sePuedeMover</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="560246434835803">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="906664319067294" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="129238660199144" type="fechaNivel">
+                    <param id="0" name="Text">&quot;16 de febrero, 1817&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="575281195428124" type="descripcionNivel">
+                    <param id="0" name="Text">&quot;Rescate de Patriotas en la Isla Juan Fernández&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="110715916604337" type="Audio">
+                    <param id="0" name="Audio file">n1m3</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-20</param>
+                    <param id="1" name="Tag (optional)">&quot;n1m3&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="972430989912156" title="Palanca Activable - Mundo 03 - Nivel 1">
+            <sub-events>
+                <event-block sid="301176286898021">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="356279876758177" type="Keyboard">
+                            <param id="0" name="Key">88 (X)</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="112724351270427" type="palancaActivable">
+                            <param id="0" name="Object">player</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="736024261509940" type="palancaActivable">
+                            <param id="0" name="Instance variable">activada</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="578511607765753">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="577214361244370" type="palancaActivable">
+                                    <param id="0" name="Unique ID">1280</param>
+                                </condition>
+                                <condition id="-14" name="Pick by unique ID" sid="291804748708565" type="reja">
+                                    <param id="0" name="Unique ID">1271</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="238374338280322" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="230977062768840" type="palancaActivable">
+                                    <param id="0" name="Animation">&quot;activada&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="637197612678076" type="palancaActivable">
+                                    <param id="0" name="Instance variable">activada</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="922672264835947" type="reja">
+                                    <param id="0" name="Animation">&quot;open&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="0" name="Play" sid="714359735127819" type="Audio">
+                                    <param id="0" name="Audio file">Open Gate</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-10</param>
+                                    <param id="1" name="Tag (optional)">&quot;gate&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-group description="" sid="574601442893493" title="Dialogos NPC Mundo 03 - Nivel 01">
+                            <sub-events>
+                                <event-block sid="432759272878377">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="923575527263291" type="palancaActivable">
+                                            <param id="0" name="Unique ID">1283</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="225871485387951" type="TX_Celda">
+                                            <param id="0" name="Unique ID">1281</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="300800463310309" type="reja">
+                                            <param id="0" name="Unique ID">1326</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="863530481398947" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="414297460533390" type="palancaActivable">
+                                            <param id="0" name="Animation">&quot;activada&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-13" name="Set boolean" sid="743628796171748" type="palancaActivable">
+                                            <param id="0" name="Instance variable">activada</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="310761805217535" type="TX_Celda">
+                                            <param id="0" name="Animation">&quot;open&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="104497200864397" type="Audio">
+                                            <param id="0" name="Audio file">Cage</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-10</param>
+                                            <param id="1" name="Tag (optional)">&quot;cage&quot;</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="403373552811682" type="dialogosNPC">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="862246238847195" type="System">
+                                            <param id="0" name="Variable">mostrandoTexto</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="456195420969969" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="630305610033820" type="dialogosNPC">
+                                            <param id="0" name="Text">&quot;¡Gracias por liberarme!&quot; &amp;newline&amp; &quot;¡Ya me estaba desesperando!&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="131928496494814" type="System">
+                                            <param id="0" name="Seconds">3</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="723795317046372" type="System">
+                                            <param id="0" name="Variable">mostrandoTexto</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="271499229164521" type="reja">
+                                            <param id="0" name="Animation">&quot;open&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="206571951905054" type="Audio">
+                                            <param id="0" name="Audio file">Open Gate</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-10</param>
+                                            <param id="1" name="Tag (optional)">&quot;gate&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="706298082060641">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="745938565556504" type="palancaActivable">
+                                            <param id="0" name="Unique ID">1365</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="712311473968315" type="TX_Celda">
+                                            <param id="0" name="Unique ID">1363</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="552771680540499" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="546063662489848" type="palancaActivable">
+                                            <param id="0" name="Animation">&quot;activada&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-13" name="Set boolean" sid="627441721455835" type="palancaActivable">
+                                            <param id="0" name="Instance variable">activada</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="946059639434882" type="TX_Celda">
+                                            <param id="0" name="Animation">&quot;open&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="257071581492181" type="Audio">
+                                            <param id="0" name="Audio file">Cage</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-10</param>
+                                            <param id="1" name="Tag (optional)">&quot;cage&quot;</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="969984473683238" type="dialogosNPC">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="621889388433466" type="System">
+                                            <param id="0" name="Variable">mostrandoTexto</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="773396542183423" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="357447642605956" type="dialogosNPC">
+                                            <param id="0" name="Text">&quot;¡¿Que haces abriendo mi celda?!&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="997058714008687" type="System">
+                                            <param id="0" name="Seconds">2</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="970365460193648" type="dialogosNPC">
+                                            <param id="0" name="Text">&quot;...&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="479835383651788" type="System">
+                                            <param id="0" name="Seconds">2</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="267965401211506" type="dialogosNPC">
+                                            <param id="0" name="Text">&quot;¡Cierto! ¡Libre soooy! ¡Libre soooy!&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="101843455832425" type="System">
+                                            <param id="0" name="Seconds">2</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="280283039387850" type="System">
+                                            <param id="0" name="Variable">mostrandoTexto</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="455819169900745">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="538160615634010" type="palancaActivable">
+                                            <param id="0" name="Unique ID">1402</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="617944158591973" type="TX_Celda">
+                                            <param id="0" name="Unique ID">1401</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="825881087060068" type="reja">
+                                            <param id="0" name="Unique ID">1259</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="661363881278909" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="581895358011012" type="palancaActivable">
+                                            <param id="0" name="Animation">&quot;activada&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-13" name="Set boolean" sid="794670048783175" type="palancaActivable">
+                                            <param id="0" name="Instance variable">activada</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="752716289899718" type="TX_Celda">
+                                            <param id="0" name="Animation">&quot;open&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="745657304339328" type="Audio">
+                                            <param id="0" name="Audio file">Cage</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-10</param>
+                                            <param id="1" name="Tag (optional)">&quot;cage&quot;</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="387390101251740" type="dialogosNPC">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="945816392544352" type="System">
+                                            <param id="0" name="Variable">mostrandoTexto</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="646977607708543" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="868796291713709" type="dialogosNPC">
+                                            <param id="0" name="Text">&quot;¡Muchas gracias! ¡Eres un grande pequeño!&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="894458026658419" type="System">
+                                            <param id="0" name="Seconds">3</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="908370221859456" type="dialogosNPC">
+                                            <param id="0" name="Text">&quot;¡Esos enanitos verdes ya me decian que estaba alucinando!&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="999286041462078" type="System">
+                                            <param id="0" name="Seconds">4</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="970390808893358" type="dialogosNPC">
+                                            <param id="0" name="Text">&quot;Que dementes, ¿cierto?&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="863553138831074" type="System">
+                                            <param id="0" name="Seconds">3</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="200919861297895" type="System">
+                                            <param id="0" name="Variable">mostrandoTexto</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="574653615571046" type="reja">
+                                            <param id="0" name="Animation">&quot;open&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="417491676132321" type="Audio">
+                                            <param id="0" name="Audio file">Open Gate</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-10</param>
+                                            <param id="1" name="Tag (optional)">&quot;gate&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-block sid="640284472593293">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="560588085027919" type="palancaActivable">
+                                    <param id="0" name="Unique ID">1307</param>
+                                </condition>
+                                <condition id="-14" name="Pick by unique ID" sid="844026803756149" type="plataformaVertical">
+                                    <param id="0" name="Unique ID">1313</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="903344355061021" type="palancaActivable">
+                                    <param id="0" name="Animation">&quot;activada&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="821300820140109" type="palancaActivable">
+                                    <param id="0" name="Instance variable">activada</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="648182117134373" type="plataformaVertical">
+                                    <param id="0" name="Instance variable">activa</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="173150511357574">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="342250772965160" type="palancaActivable">
+                                    <param id="0" name="Unique ID">1409</param>
+                                </condition>
+                                <condition id="-14" name="Pick by unique ID" sid="597345682152895" type="plataformaHorizontal">
+                                    <param id="0" name="Unique ID">1398</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="754194315159305" type="palancaActivable">
+                                    <param id="0" name="Animation">&quot;activada&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="559895071825239" type="palancaActivable">
+                                    <param id="0" name="Instance variable">activada</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="510838538713290" type="plataformaHorizontal">
+                                    <param id="0" name="Instance variable">activa</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="938997458724569" title="Mundo 3 - Cambio a Nivel 01 a Nivel 2">
+            <sub-events>
+                <event-block sid="556395062478057">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="148611586312119" type="player">
+                            <param id="0" name="Animation">&quot;celebracion&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action disabled="1" id="-2" name="Go to layout" sid="931664880470353" type="System">
+                            <param id="0" name="Layout">Mundo 01 - Nivel 03(Busqueda decreto convocatoria del primer congreso nacional)</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="124764931907355" type="CartelVictoria">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="646615050397293" type="CartelVictoria">
+                            <param id="0" name="Instance variable">activado</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="372298950492258" title="0301 - Victoria">
+            <sub-events>
+                <event-block sid="837798704773445">
+                    <conditions>
+                        <condition id="-9" name="Is visible" sid="194034987622102" type="CartelVictoria" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="558624955689397">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="862282927030387" type="CartelVictoria">
+                                    <param id="0" name="Instance variable">escala</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">1.5</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="163411398592776" type="CartelVictoria">
+                                    <param id="0" name="Instance variable">escala</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="206555986024597" type="CartelVictoria">
+                                    <param id="0" name="Instance variable">activado</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="488798957685010">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="517290994414837" type="System">
+                                            <param id="0" name="Interval (seconds)">0.05</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-17" name="Set layer scale" sid="164818144412182" type="System">
+                                            <param id="0" name="Layer">&quot;cartel&quot;</param>
+                                            <param id="1" name="Scale">LayerScale(&quot;cartel&quot;) + 0.2</param>
+                                        </action>
+                                        <action id="-11" name="Add to" sid="875129702655506" type="CartelVictoria">
+                                            <param id="0" name="Instance variable">escala</param>
+                                            <param id="1" name="Value">0.2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="758571652586595">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="607411785220389" type="CartelVictoria">
+                                    <param id="0" name="Instance variable">escala</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1.5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="322419139615030" type="CartelVictoria">
+                                    <param id="0" name="Instance variable">activado</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="519799907629403" type="System">
+                                    <param id="0" name="Seconds">3</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="393626019291342" type="System">
+                                    <param id="0" name="Group name">&quot;Animaciones Player&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="669332281954854" type="System">
+                                    <param id="0" name="Layout">Capitulos</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="405145335549261" type="System">
+                                    <param id="0" name="Variable">nivelTerminado</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <comment>Establecer capitulo al que se redirige | Establecer parametros y reiniciar frame de pagina actual a 0</comment>
+                                <event-block sid="974879015458957">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="473219059173160" type="System">
+                                            <param id="0" name="Variable">capituloActual</param>
+                                            <param id="1" name="Value">32</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="469418126547293" type="System">
+                                            <param id="0" name="Variable">nivelActual</param>
+                                            <param id="1" name="Value">32</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="782068956351234" type="System">
+                                            <param id="0" name="Variable">framePaginaActual</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="0" name="Set item" sid="758828976705914" type="LocalStorage">
+                                            <param id="0" name="Key">&quot;ultimoNivelAlcanzado&quot;</param>
+                                            <param id="1" name="Value">32</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="206596970506116" type="System">
+                                            <param id="0" name="Group name">&quot;Movimientos Player&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="308357419331294" title="Mundo 3 - Nivel 01 - Dialogos">
+            <sub-events>
+                <event-block sid="428012557586504">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="925130557785961" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="307968757522987" type="dialogosNPC">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="909102170739393" type="System">
+                            <param id="0" name="Variable">mostrandoTexto</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="891410696844381" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="0" name="Set text" sid="975205196203228" type="dialogosNPC">
+                            <param id="0" name="Text">&quot;Liberemos a nuestros compatriotas en Juan Fernández.&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="453432883127550" type="System">
+                            <param id="0" name="Seconds">4</param>
+                        </action>
+                        <action id="0" name="Set text" sid="216997101282728" type="dialogosNPC">
+                            <param id="0" name="Text">&quot;Es momento de que regresen a su país junto a sus seres queridos.&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="153615672886195" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="0" name="Set text" sid="946745159210922" type="dialogosNPC">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="517749195228828" type="System">
+                            <param id="0" name="Variable">mostrandoTexto</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="800423565348556" type="System">
+                            <param id="0" name="Seconds">4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="423263234866440">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="146975860443465" type="player">
+                            <param id="0" name="Object">puntoDialogoNPC</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="300735419795730" type="puntoDialogoNPC">
+                            <param id="0" name="Unique ID">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="929380666074693" type="System">
+                            <param id="0" name="Group name">&quot;Movimientos Player&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="869586213490444" type="System">
+                            <param id="0" name="Variable">mostrandoTexto</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="943521462759938" type="dialogosNPC">
+                            <param id="0" name="Text">&quot;¡Gracias soldado!&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="615661009147467" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="0" name="Set text" sid="715799152725061" type="dialogosNPC">
+                            <param id="0" name="Text">&quot;¡Hemos liberado a todos nuestros compatriotas!&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="730916797466594" type="System">
+                            <param id="0" name="Seconds">4</param>
+                        </action>
+                        <action id="0" name="Set text" sid="647687236628590" type="dialogosNPC">
+                            <param id="0" name="Text">&quot;Regresemos, ya hemos cumplido nuestra mision.&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="885432314094573" type="System">
+                            <param id="0" name="Seconds">4</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="571269328620469" type="System">
+                            <param id="0" name="Variable">mostrandoTexto</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="589492099958450" type="System">
+                            <param id="0" name="Variable">nivelTerminado</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="6" name="Stop" sid="254559971905523" type="Audio">
+                            <param id="0" name="Tag">&quot;n1m3&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="630859828496050" type="Audio">
+                            <param id="0" name="Audio file">Victory1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;victoria1&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

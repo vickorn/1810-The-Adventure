@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>save</name>
+    <events>
+        <variable constant="0" name="ultimoNivelAlcanzado" sid="885670135596263" static="0" type="number">0</variable>
+        <comment>Al inicio del nivel, verificamos si existe el &quot;último nivel alcanzado&quot;</comment>
+        <event-block sid="935739950797350">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="808013244959995" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Check item exists" sid="571497189526477" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ultimoNivelAlcanzado&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Si existe, lo &quot;obtenemos&quot;</comment>
+        <event-block sid="195976610786389">
+            <conditions>
+                <condition id="9" name="On item exists" sid="788446386384863" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ultimoNivelAlcanzado&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="383362394127388" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ultimoNivelAlcanzado&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Si no existe, lo creamos y tiene por default el valor 11 (Mundo 1 nivel 1)   | Primer numero es el mundo, segundo numero es el nivel</comment>
+        <event-block sid="891229313156455">
+            <conditions>
+                <condition id="10" name="On item missing" sid="280255405481828" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ultimoNivelAlcanzado&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="145626761532285" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ultimoNivelAlcanzado&quot;</param>
+                    <param id="1" name="Value">11</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Una vez obtenido el &quot;ultimo nivel alcanzado&quot;, lo asignamos a la variable global &quot;ultimoNivelAlcanzado&quot;</comment>
+        <event-block sid="813380673240376">
+            <conditions>
+                <condition id="1" name="On item get" sid="924581171893349" type="LocalStorage">
+                    <param id="0" name="Key">&quot;ultimoNivelAlcanzado&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="476175586428864" type="System">
+                    <param id="0" name="Variable">ultimoNivelAlcanzado</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>popUpMenu</name>
+    <events>
+        <variable constant="0" name="juegoPausado" sid="500004505763496" static="0" type="number">0</variable>
+        <event-block sid="946213391082650">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="855496966962877" type="Keyboard">
+                    <param id="0" name="Key">27 (Esc)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="552598536128375">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="667112076551828" type="System">
+                            <param id="0" name="Variable">juegoPausado</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="509029945501987" type="popUpReiniciar">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="209034316572929" type="popUpSalir">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="153198239975749" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="431109444955121" type="System">
+                            <param id="0" name="Variable">juegoPausado</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="851484267258705" type="System">
+                            <param id="0" name="Group name">&quot;Botones Pop-up&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="904628828141749" type="System">
+                            <param id="0" name="Group name">&quot;Player v2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="957328473535874" type="System">
+                            <param id="0" name="Group name">&quot;ObjetosGlobales&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="453698170200591" type="Audio">
+                            <param id="0" name="Audio file">Pause</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;Pause&quot;</param>
+                        </action>
+                        <action id="10" name="Set master volume" sid="648549827837600" type="Audio">
+                            <param id="0" name="dB">-20</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="802002628286012">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="528937558623686" type="System" />
+                        <condition id="-14" name="Compare variable" sid="682100273994069" type="System">
+                            <param id="0" name="Variable">juegoPausado</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="228194917886323" type="popUpReiniciar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="464880483271456" type="popUpSalir">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="580188428071336" type="System">
+                            <param id="0" name="Time scale">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="539640588410415" type="System">
+                            <param id="0" name="Variable">juegoPausado</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="586681954407258" type="System">
+                            <param id="0" name="Group name">&quot;Botones Pop-up&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="670283878687872" type="System">
+                            <param id="0" name="Group name">&quot;Player v2&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="293096834244815" type="System">
+                            <param id="0" name="Group name">&quot;ObjetosGlobales&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="10" name="Set master volume" sid="706102373997376" type="Audio">
+                            <param id="0" name="dB">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="210890731946101" type="Audio">
+                            <param id="0" name="Audio file">unpause</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;unpause&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" inactive="1" sid="633833818931169" title="Botones Pop-Up">
+            <sub-events>
+                <event-block sid="879689032698060">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="656161379470468" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">popUpReiniciar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="650365848535883" type="System" />
+                        <action id="-13" name="Set time scale" sid="730356619039428" type="System">
+                            <param id="0" name="Time scale">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="794969201367587" type="System">
+                            <param id="0" name="Variable">juegoPausado</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="619814817192479" type="System">
+                            <param id="0" name="Group name">&quot;Player v2&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="427535083859934" type="System">
+                            <param id="0" name="Group name">&quot;ObjetosGlobales&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="604923570888997" type="Audio">
+                            <param id="0" name="Audio file">Retro_Game_Unlock_2</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;Click&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="162954591434089">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="692133891121916" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">popUpSalir</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="279133248059847" type="Audio">
+                            <param id="0" name="Audio file">Retro_Game_Unlock_2</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;Click&quot;</param>
+                        </action>
+                        <action id="1" name="Close" sid="425665407663125" type="Browser" />
+                    </actions>
+                </event-block>
+                <event-block sid="332079861648096">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="198112141164385" type="Mouse">
+                            <param id="0" name="Object">popUpReiniciar</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="501599819444847" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="670389429937158" type="popUpReiniciar">
+                            <param id="0" name="Animation">&quot;onFocus&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="813467231826092" type="Audio">
+                            <param id="0" name="Audio file">Retro_Game_Menu_Navigation_3</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;Select&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="734159943418208">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="836641391121498" type="System" />
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="265205584712062" type="Mouse">
+                            <param id="0" name="Object">popUpReiniciar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="903012994241968" type="popUpReiniciar">
+                            <param id="0" name="Animation">&quot;idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="921079531562042">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="375881061974266" type="Mouse">
+                            <param id="0" name="Object">popUpSalir</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="363047602557117" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="465972507264482" type="popUpSalir">
+                            <param id="0" name="Animation">&quot;onFocus&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="191235825586469" type="Audio">
+                            <param id="0" name="Audio file">Retro_Game_Menu_Navigation_3</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;Select&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="756424506499175">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="137719952043118" type="System" />
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="488801066059875" type="Mouse">
+                            <param id="0" name="Object">popUpSalir</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="445683535021661" type="popUpSalir">
+                            <param id="0" name="Animation">&quot;idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

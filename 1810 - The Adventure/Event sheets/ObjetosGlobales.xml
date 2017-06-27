@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ObjetosGlobales</name>
+    <events>
+        <event-group description="" sid="767652267369393" title="ObjetosGlobales">
+            <sub-events>
+                <event-group description="" sid="950615219503939" title="Plataformas">
+                    <sub-events>
+                        <event-group description="" sid="174582666841499" title="Palancas Verticales">
+                            <sub-events>
+                                <event-block sid="525666038935702">
+                                    <conditions>
+                                        <condition id="-1" name="Every tick" sid="438418549360768" type="System" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="297482312532710">
+                                            <conditions>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="703252352024358" type="plataformaVertical">
+                                                    <param id="0" name="Instance variable">activa</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="773839506597490">
+                                                    <conditions>
+                                                        <condition id="-8" name="Is boolean instance variable set" sid="436668947970229" type="plataformaVertical">
+                                                            <param id="0" name="Instance variable">arriba</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-2" name="Set Y" sid="848994833686024" type="plataformaVertical">
+                                                            <param id="0" name="Y">plataformaVertical.Y-1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="361522172289460">
+                                                    <conditions>
+                                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="577466068477241" type="plataformaVertical">
+                                                            <param id="0" name="Instance variable">arriba</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-2" name="Set Y" sid="760554970559260" type="plataformaVertical">
+                                                            <param id="0" name="Y">plataformaVertical.Y+1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="909885876171844">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="121290501671425" type="plataformaVertical">
+                                            <param id="0" name="Object">limiteSuperior</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-13" name="Set boolean" sid="278512750734786" type="plataformaVertical">
+                                            <param id="0" name="Instance variable">arriba</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="113167884641655">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="326928051856418" type="plataformaVertical">
+                                            <param id="0" name="Object">limiteInferior</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-13" name="Set boolean" sid="909304887419109" type="plataformaVertical">
+                                            <param id="0" name="Instance variable">arriba</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" sid="287576866519001" title="Palancas Horizontales">
+                            <sub-events>
+                                <event-block sid="650491261727251">
+                                    <conditions>
+                                        <condition id="-1" name="Every tick" sid="296669491777670" type="System" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="678878164581352">
+                                            <conditions>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="224712984485565" type="plataformaHorizontal">
+                                                    <param id="0" name="Instance variable">activa</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="898614203256241">
+                                                    <conditions>
+                                                        <condition id="-8" name="Is boolean instance variable set" sid="320543273071523" type="plataformaHorizontal">
+                                                            <param id="0" name="Instance variable">derecha</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-1" name="Set X" sid="663591754277026" type="plataformaHorizontal">
+                                                            <param id="0" name="X">plataformaHorizontal.X+1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="587160843242303">
+                                                    <conditions>
+                                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="730706294668178" type="plataformaHorizontal">
+                                                            <param id="0" name="Instance variable">derecha</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-1" name="Set X" sid="690698256754874" type="plataformaHorizontal">
+                                                            <param id="0" name="X">plataformaHorizontal.X-1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="950098337447672">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="450852110632567" type="plataformaHorizontal">
+                                            <param id="0" name="Object">limiteDerecho</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-13" name="Set boolean" sid="492566232848774" type="plataformaHorizontal">
+                                            <param id="0" name="Instance variable">derecha</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="883019104824066">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="616655714563099" type="plataformaHorizontal">
+                                            <param id="0" name="Object">limiteIzquierdo</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-13" name="Set boolean" sid="882611321729954" type="plataformaHorizontal">
+                                            <param id="0" name="Instance variable">derecha</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="528642468297670" title="Escaleras">
+                    <sub-events>
+                        <event-block sid="850156010208916">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="889081745200130" type="Keyboard">
+                                    <param id="0" name="Key">38 (Up arrow)</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="763631352717934" type="player">
+                                    <param id="0" name="Instance variable">sobreEscalera</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="342729382840639" type="player">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="990125884364787">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="408651738036795" type="player">
+                                    <param id="0" name="Instance variable">puedeSubirEscalera</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="370544627234255" type="player">
+                                    <param id="0" name="Object">Escalera</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="728199795222737">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="535363383652758" type="Keyboard">
+                                            <param id="0" name="Key">38 (Up arrow)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-13" name="Set boolean" sid="482861480294587" type="player">
+                                            <param id="0" name="Instance variable">sobreEscalera</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-13" name="Set boolean" sid="207882021532078" type="player">
+                                            <param id="0" name="Instance variable">estaEnSuelo</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="879049352840987">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="463273539554356" type="Keyboard">
+                                            <param id="0" name="Key">40 (Down arrow)</param>
+                                        </condition>
+                                        <condition behavior="Platform" id="2" inverted="1" name="Is on floor" sid="520629163354982" type="player" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-13" name="Set boolean" sid="212290235105512" type="player">
+                                            <param id="0" name="Instance variable">sobreEscalera</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-13" name="Set boolean" sid="954703418813732" type="player">
+                                            <param id="0" name="Instance variable">estaEnSuelo</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="557208480503927">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="886332178190163" type="System" />
+                                <condition id="-8" name="Is boolean instance variable set" sid="559177353841554" type="player">
+                                    <param id="0" name="Instance variable">puedeSubirEscalera</param>
+                                </condition>
+                                <condition id="9" name="Is overlapping at offset" sid="302889840714641" type="player">
+                                    <param id="0" name="Object">Escalera</param>
+                                    <param id="1" name="Offset X">0</param>
+                                    <param id="2" name="Offset Y">32</param>
+                                </condition>
+                                <condition id="-2" name="Compare Y" sid="578291557296908" type="player">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">Escalera.Y + 16</param>
+                                </condition>
+                                <condition id="2" name="Key is down" sid="787839226697122" type="Keyboard">
+                                    <param id="0" name="Key">40 (Down arrow)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="249787972420865" type="player">
+                                    <param id="0" name="Instance variable">sobreEscalera</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="531942493216164" type="player">
+                                    <param id="0" name="Y">player.Y + 2</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="591896257240351" type="player">
+                                    <param id="0" name="Instance variable">estaEnSuelo</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="152868965976789">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="857713319402292" type="System" />
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="262712059627712" type="player">
+                                    <param id="0" name="Object">Escalera</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="584522742082711" type="player">
+                                    <param id="0" name="Instance variable">sobreEscalera</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="649578739321175">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="873069093767852" type="System" />
+                                <condition id="9" name="Is overlapping at offset" sid="669812979518908" type="player">
+                                    <param id="0" name="Object">Escalera</param>
+                                    <param id="1" name="Offset X">0</param>
+                                    <param id="2" name="Offset Y">32</param>
+                                </condition>
+                                <condition id="-2" name="Compare Y" sid="522132650258889" type="player">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">Escalera.Y + 16</param>
+                                </condition>
+                                <condition id="2" name="Key is down" sid="715359902780401" type="Keyboard">
+                                    <param id="0" name="Key">40 (Down arrow)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="909785633078085" type="player">
+                                    <param id="0" name="Instance variable">sobreEscalera</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="345214360082432">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="141887886961703" type="System" />
+                                <condition id="1" name="Is overlapping another object" sid="727222210848325" type="player">
+                                    <param id="0" name="Object">Escalera</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="215752435644690" type="player">
+                                    <param id="0" name="Animation">&quot;dañado&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="615996973927955" type="player">
+                                    <param id="0" name="Instance variable">sobreEscalera</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="746414846096145">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="562474394884431" type="Keyboard">
+                                    <param id="0" name="Key">32 (Barra Espaciadora)</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="641800626752982" type="player">
+                                    <param id="0" name="Instance variable">sobreEscalera</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="994743735954618" type="player">
+                                    <param id="0" name="Instance variable">sobreEscalera</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="629195848846145">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="681126129047088" type="player">
+                                    <param id="0" name="Instance variable">sobreEscalera</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="912685679304612" type="player">
+                                    <param id="0" name="Object">Escalera</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="11" name="Set enabled" sid="338079864433936" type="player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="8Direction" id="2" name="Set ignoring input" sid="311018697119403" type="player">
+                                    <param id="0" name="Input">0</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="105635320796573" type="player">
+                                    <param id="0" name="X">Escalera.X + 16</param>
+                                </action>
+                                <action behavior="Platform" id="8" name="Set vector X" sid="382168689589254" type="player">
+                                    <param id="0" name="Vector X">0</param>
+                                </action>
+                                <action behavior="Platform" id="9" name="Set vector Y" sid="637704640202501" type="player">
+                                    <param id="0" name="Vector Y">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="601256088826702">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="800890616990123" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="11" name="Set enabled" sid="440860356909866" type="player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="8Direction" id="2" name="Set ignoring input" sid="625021740139115" type="player">
+                                    <param id="0" name="Input">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
